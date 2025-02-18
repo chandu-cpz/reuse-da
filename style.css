@@ -1064,6 +1064,7 @@ body {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
+  text-align: left;
 }
 
 .scheme-details.hidden {
@@ -1086,13 +1087,16 @@ body {
 }
 
 .scheme-details ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
+  list-style-position: inside;
+  padding-left: 1rem;
   margin-bottom: 1rem;
 }
 
 .scheme-details li {
   margin-bottom: 0.5rem;
+  display: list-item;
+  text-align: left;
+  list-style-type: disc;
 }
 
 .show-details-btn {
@@ -1126,4 +1130,27 @@ body {
 
 .apply-btn:hover {
   background: #218838;
+}
+
+.author-credit {
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(90deg, #1a5f7a 0%, #86c3d7 100%);
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.author-credit p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.author-name {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#ffffff, #e0e0e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
