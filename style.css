@@ -1054,3 +1054,76 @@ body {
   border-top: 1px solid #555;
   padding-top: 1rem;
 }
+
+.scheme-details {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+
+.scheme-details.hidden {
+  display: none;
+}
+
+.scheme-details h5 {
+  color: #FBC412;
+  font-size: 1.2rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.scheme-details h5:first-child {
+  margin-top: 0;
+}
+
+.scheme-details p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.scheme-details ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.scheme-details li {
+  margin-bottom: 0.5rem;
+}
+
+.show-details-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #FBC412;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.show-details-btn:hover {
+  background: #e0b010;
+}
+
+.apply-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: #218838;
+}
